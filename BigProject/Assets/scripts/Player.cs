@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.CrossPlatformInput;
+
 
 public class Player : MonoBehaviour
 {
@@ -14,5 +16,10 @@ public class Player : MonoBehaviour
     void Update()
     {
         
+    }
+
+    private void Run()
+    {
+        float controlThrow = CrossPlatformInputManager.GetAxis("Horizontal")
     }
 }
